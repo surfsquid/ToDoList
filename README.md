@@ -1,15 +1,11 @@
 # ToDoList
 A To Do List application using .NET 5.0 and Angular
 
-##Requirements##
+## Requirements ##
 .NET 5.0
 
-
-## To Run ##
-Clone the repo and open the .sln in VS2019
-
-
 ## Notes ##
+
 Angular Material components used for UI.
 
 Angular service for calling the Web API was generated using swagger/NSwagStudio.
