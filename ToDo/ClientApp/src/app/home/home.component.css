@@ -1,0 +1,12 @@
+.checkbox {
+  margin-left: 50px;
+}
+
+.btn-primary {
+  margin-left: 40px;
+  align-self: end;
+}
+
+p {
+  min-width: 65%;
+}

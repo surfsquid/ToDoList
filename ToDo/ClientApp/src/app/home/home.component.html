@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-title>To Do List</mat-card-title>
+  <mat-card-content>
+    <mat-form-field appearance="fill">
+      <mat-label>New task</mat-label>
+      <input [(ngModel)]="newTask" matInput>
+    </mat-form-field>
+    <button (click)="addTask()" mat-raised-button class="btn-primary" color="primary">Add</button>
+    <mat-list>
+      <mat-list-item *ngFor="let task of tasks$ | async">
+        <p>{{task.text}}</p>
+        <button class="btn-primary" (click)="deleteTask(task)" mat-raised-button color="warn">Delete</button>
+        <mat-checkbox class="checkbox" [checked]="task.completed" (change)="updateTask($event.checked, task)"></mat-checkbox>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
